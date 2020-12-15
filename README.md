@@ -1,7 +1,9 @@
-# tinynf
+# lifebit-ai/getdata
 
-Test retrieving file paths without staging the files from an S3 bucket:
+Retrieve many files from https links from a list file
 
 ```bash
-nextflow run lifebit-ai/tinynf --s3_folder s3://lifebit-featured-datasets/projects/avt/vcf-tests/
+git clone https://github.com/lifebit-ai/getdata
+cd getdata/
+nextflow run . --links_list links.txt
 ```
